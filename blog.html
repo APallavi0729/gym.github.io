@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rockway Fitness</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -16,10 +16,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+ <link rel="icon" sizes="192x192" href="images/gym-logo.png">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ <link rel="stylesheet" href="index.css">
     <style>
          *{
             padding: 0%;
@@ -85,7 +86,7 @@ height: 80px;
     background-color: rgba(255, 26, 26, 0.866);
     cursor: pointer;
 }
-.get:hover{
+.active2,.get:hover{
     background-color: rgba(255, 26, 26, 0.866);
 }
 .second{
@@ -103,7 +104,7 @@ height: 80px;
     background-color: transparent;
     cursor: pointer;
 }
-.one:hover{
+.active,.one:hover{
     background-color: white;
     color: black;
 }
@@ -184,10 +185,9 @@ height: 12vh;
 footer{
     position: absolute;
   padding-top: 100%;
-  margin-top: 100px;
     background: #111;
     height: auto;
-    width: 100vw;
+   width:100%;
  padding-top: 40px;
     color: #fff;
     background-color: #000;
@@ -245,7 +245,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
 padding-bottom: 40px;
     text-align: center;
@@ -287,18 +287,133 @@ display: block;
   color: #27bcda;
 }
 
+
 @media (max-width:500px) {
 .footer-menu ul{
   display: flex;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.logos{
+width: 150px;
+height: 70px;
+
+}
+.upper{
+    display: none;
+}
+.cp{
+    display: block;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+nav{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+   justify-content: space-between;
+    
+   width: 100%;
+   overflow: hidden;
+}
+.content{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.h1{
+  color:white;font-size:18px;font-weight: bolder;
+}.h2{
+  color:red;font-weight: bolder;font-size:14px;
+}
+.h3{
+  color:white;font-size:14px;
+}
+.home{
+display: none;
+}
+.second{
+  display: none;
+}
+.box{
+     width: 100%;
+          height:90vh;
+          display:flex;
+          flex-direction: column;
+         background-color: black;
+         padding-right: 10px;
+         padding-left: 10px;
+      }
+      
+      .boxmain{
+          border: none;
+         width:100%;
+          color:white;
+   }
+      .boxmain2{
+        display: none;
+          border: none;
+       padding-top: 15vh;
+     }
+     .onea{
+  border:none;
+width: 100px;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:22px;
+}
+.content{
+  padding-left:40px;
+}
+.act{
+  font-size: 14px;
+  padding-top: 100px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.body-content{
+  width: 100%;
+    height:10vh;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+
+}
+.heading{
+ text-decoration:solid;
+    font-size:  32px;     
+}
+.para-graph{
+    padding-top: 50px;
+     font-size: 22px;
+     color: grey;
+}
+.btnjoin{  
+font-family: 'Inter';
+background-color: transparent;
+font-weight: 800;
+font-size: 24px;
+text-align: center;
+padding-top: 40px;
+padding-left: 50px;
+font-weight: bold;
+cursor: pointer;
+}
+.container{display: none;}
+
 }
 .imgfooter{
     height: 80px;
     width: 150px;
 }
-
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #f4511e;
@@ -338,24 +453,86 @@ display: block;
   display: table;
   clear: both;
 }
+.health{margin-left: 20x;padding-top: 20px;font-size: 28px;font-weight:bold}
     </style>
 </head>
 <body>
     <nav>
-        <div class="firstbox">
-           <img src="logo.png "class="logos"/>
-            <div class="home">
-              <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
-              <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
-              <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
-                  <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
-                      <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
-            </div>
-             <div class="second">
-                <button class="get" href="">LogIn</a>
-                <button class="get1"href="">Sin Up</button>
-             </div>
-        </div></nav>
+      <div class="firstbox">
+        <img src="logo.png "class="logos"/>
+         <div class="home"id="first">
+           <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one">Home</btton></a> 
+           <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+           <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+               <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                   <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one active">Blogs</btton></a>
+         </div>
+          <div class="second"id="sec">
+             <button class="get" href="">LogIn</a>
+             <button class="get active2"href="">Sin Up</button>
+          </div>
+          <div class="thir">
+            <span class="thirednav"style="" onclick="openNav()">&#9776;</span>
+          </div>
+     </div>
+     <!--div class="mobile-navbar-btn">
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+     </div
+   
+     
+     <button class="nav-toggle-btn">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </button>-->
+    </nav>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+           <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+           <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+               <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                   <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+    
+ 
+     <script>
+         // Add active class to the current button (highlight it)
+         var header = document.document.getElementById("first");
+         var btns = header.getElementsByClassName("one");
+         for (var i = 0; i < btns.length; i++) {
+           btns[i].addEventListener("click", function() {
+           var current = document.getElementsByClassName("active");
+           current[0].className = current[0].className.replace(" active", "");
+           this.className += " active";
+           });
+         }
+         </script>
+            <script>
+             // Add active class to the current button (highlight it)
+             var header = document.document.getElementById("sec");
+             var btns = header.getElementsByClassName("get");
+             for (var i = 0; i < btns.length; i++) {
+               btns[i].addEventListener("click", function() {
+               var current = document.getElementsByClassName("active2");
+               current[0].className = current[0].className.replace(" active2", "");
+               this.className += " active";
+               });
+             }
+             </script>
+
        
        
         <br>
@@ -392,7 +569,7 @@ display: block;
 <div class="contbox">
 <div class="coll">
      <div class="container"style="background-color: transparent;padding-top:50px">
-        <p style="margin-left: 20x;padding-top: 20px;font-size: 28px;font-weight:boldfont-weight:bold">Top Picks</p>
+        <p class="health"style="">Top Picks</p>
    
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
@@ -470,8 +647,8 @@ display: block;
 
 
     <div class="container"style="background-color: transparent;padding-top:400px">
-       <p style="margin-left: 20x;padding-top: 20px;font-size: 28px;font-weight:bold">Healthy Tips</p>
-  
+       <p class="health"style="">Healthy Tips</p>
+
        <div id="myCarousel3" class="carousel slide" data-ride="carousel">
        <!-- Wrapper for slides -->
          <div class="carousel-inner">
@@ -548,7 +725,7 @@ display: block;
 
 
     <div class="container"style="background-color: transparent;padding-top:300px">
-       <p style="margin-left: 20x;padding-top: 20px;font-size: 28px;font-weight:bold">Food and Beverages</p>
+       <p class="health"style="">Food and Beverages</p>
   
        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
        <!-- Wrapper for slides -->
@@ -626,7 +803,7 @@ display: block;
 
 
     <div class="container"style="background-color: transparent;padding-top:400px">
-       <p style="margin-left: 20x;padding-top: 20px;font-size: 28px;font-weight:bold">Warm up Combo</p>
+       <p class="health"style="">Warm up Combo</p>
   
        <div id="myCarousel4" class="carousel slide" data-ride="carousel">
        <!-- Wrapper for slides -->
@@ -698,6 +875,7 @@ display: block;
          </a>
        </div>
      </div>
+         <!--for phone use -->
      </div>
 </div>  
   <br>

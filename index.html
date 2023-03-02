@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rockway Fitness</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -25,10 +25,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
+   <link rel="icon" sizes="192x192" href="images/gym-logo.png">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script><style>
-        *{
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <link rel="stylesheet" href="index.css">
+      <style>  *{
             padding: 0%;
             margin: 0%;
         }
@@ -41,11 +42,35 @@
     position: fixed;
    width: 100%;
    overflow: hidden;
-  position: absolute;
-   
-    
-   
-    
+  position: absolute;  
+}
+.mobile-nav-icon{
+  width: 5rem;
+  height: 4rem;
+  color: #fff;
+}
+.mobile-nav-icon[name="close-outline"]{
+  display: none;
+}
+
+.mobile-navbar-btn{
+ /*display: none;*/
+ background: transparent;
+ cursor: pointer;
+}
+
+
+@media(max-width:62em){
+  .mobile-navbar-btn{
+    display: block;
+    z-index: 999;
+    border: 3px solid #fff;
+    color: #fff;
+  }
+  
+  .firstbox{
+    display: none;
+  }
 }
 .firstbox{
     display: flex;
@@ -92,7 +117,7 @@ height: 80px;
     background-color: rgba(255, 26, 26, 0.866);
     cursor: pointer;
 }
-.get:hover{
+.active2,.get:hover{
     background-color: rgba(255, 26, 26, 0.866);
 }
 .second{
@@ -110,7 +135,7 @@ height: 80px;
     background-color: transparent;
     cursor: pointer;
 }
-.one:hover{
+.active,.one:hover{
     background-color: white;
     color: black;
 }
@@ -165,12 +190,12 @@ width: 300px;
   padding-left: 30px;
   padding-top: 36px;
   border-radius: 22px;
-  margin-left: 140px;
+  margin-left: 40px;
   position: absolute;
  bottom:0%;
   margin-right: 50px;
  word-spacing: .3rem;
- margin-bottom: -30px;
+ margin-bottom: 0;
  left: 900px;
   height: 220px;
   width: 320px;
@@ -304,7 +329,7 @@ footer{
   padding-top: 100%;
     background: #111;
     height: auto;
-    width: 100vw;
+   width:100%;
  padding-top: 40px;
     color: #fff;
     background-color: #000;
@@ -362,7 +387,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
 padding-bottom: 40px;
     text-align: center;
@@ -403,56 +428,311 @@ display: block;
 .footer-menu ul li a:hover{
   color: #27bcda;
 }
-
+.contowl{display: none;}
 @media (max-width:500px) {
+
 .footer-menu ul{
   display: flex;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.logos{
+width: 150px;
+height: 70px;
+
 }
+nav{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+   justify-content: space-between;
+    
+   width: 100%;
+   overflow: hidden;
+}
+.content{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.h1{
+  color:white;font-size:18px;font-weight: bolder;
+}.h2{
+  color:red;font-weight: bolder;font-size:14px;
+}
+.h3{
+  color:white;font-size:14px;
+}
+.home{
+display: none;
+}
+.second{
+  display: none;
+}
+.box{
+     width: 100%;
+          height:90vh;
+          display:flex;
+          flex-direction: column;
+         background-color: black;
+         padding-right: 10px;
+         padding-left: 10px;
+      }
+      
+      .boxmain{
+          border: none;
+         width:100%;
+          color:white;
+   }
+      .boxmain2{
+        display: none;
+          border: none;
+       padding-top: 20vh;
+     }
+     .onea{
+  border:none;
+width: 100px;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size:22px;
+}
+.content{
+  padding-left:40px;
+}
+.act{
+  font-size: 14px;
+  padding-top: 100px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+.listcon{
+display: none;
+}
+.box2img{ height:600px;}
+
+.body-content{
+  width: 100%;
+    height:10vh;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+
+}
+.heading{
+ text-decoration:solid;
+    font-size:  32px;     
+}
+.para-graph{
+    padding-top: 50px;
+     font-size: 22px;
+     color: grey;
+}
+.btnjoin{  
+font-family: 'Inter';
+background-color: transparent;
+font-weight: 800;
+font-size: 24px;
+text-align: center;
+padding-top: 40px;
+padding-left: 20px;
+font-weight: bold;
+cursor: pointer;
+}
+.bigtext{
+    padding-top: 620px;
+    font-size: 20px;
+}
+.owl{
+ 
+   padding-top: 30px;
+}
+.owl2{
+ padding-top: 30px;
+}
+
+.owl2 .owl-carousel .item .text h2{
+  color: #810a31;
+ margin-top: 10px;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-weight: 100;
+  font-size: 20px;
+  display: absolute;
+  overflow: hidden;
+}
+.colum{
+    width: 350px;
+    height: 500px;
+    margin-left:30px;
+    margin-right:30px;
+    text-align: center;
+    display: inline-block;   
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.owlimg{
+    width: 400px;height:300px;
+   }
+   .owlimg2{
+    width: 400px;height:350px;
+   }
+   .trainl{
+    display: none;
+   }
+   .container{
+  display: none;
+}
+
+}
+
+.owlimg{
+    width: 300px;height:300px;
+   }
+   .owlimg2{
+    width: 300px;height:350px;
+   }
 .imgfooter{
     height: 80px;
     width: 150px;
 }
 
+.h1{
+  color:white;font-size:44px;padding-top:150px;font-weight: bolder;
+}
+.h2{
+  color:red;font-size:44px;font-weight: bolder;
+}
+.h3{
+  color:white;font-size:24px;
+}
+.box2img{ width:550px;height:600px;padding-left:30px }
+.nav-toggle-btn {
+  background: var(--red-orange-color-wheel);
+  width:  50px;
+  height: 50px;
+  border-radius: 8px;
+  display:         flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items:     center;
+  gap: 6px;
+}
+
+.nav-toggle-btn span {
+  background: var(--white);
+  width: 30px;
+  height: 2px;
+  transition: var(--default-transition);
+}
+
+.nav-toggle-btn.active .one { transform: rotate(45deg) translate(3px, 3px); } 
+
+.nav-toggle-btn.active .two { display: none; }
+
+.nav-toggle-btn.active .three { transform: rotate(-45deg) translate(2px, -2px); }
+nav .fas{display: none;}
     </style>
 </head>
 <body>
      <nav>
-    <div class="firstbox">
-       <img src="logo.png "class="logos"/>
-        <div class="home">
-          <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
-          <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
-          <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
-              <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
-                  <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
-        </div>
-         <div class="second">
-            <button class="get" href="">LogIn</a>
-            <button class="get1"href="">Sin Up</button>
+      <div class="firstbox">
+        <img src="logo.png "class="logos"/>
+        
+         <div class="home"id="first">
+           <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+           <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+           <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+               <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                   <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
          </div>
-    </div></nav>
+          <div class="second"id="sec">
+             <button class="get" href="">LogIn</a>
+             <button class="get active2"href="">Sin Up</button>
+          </div>
+       
+            <span class="thirednav"style="" onclick="openNav()">&#9776;</span>
+          
+     </div>
+     <!--div class="mobile-navbar-btn">
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+     </div
    
-    <br>
-    <br>
+     
+     <button class="nav-toggle-btn">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </button>-->
+    </nav>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+         <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+           <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+           <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+               <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                   <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+ 
+     <script>
+         // Add active class to the current button (highlight it)
+         var header = document.document.getElementById("first");
+         var btns = header.getElementsByClassName("one");
+         for (var i = 0; i < btns.length; i++) {
+           btns[i].addEventListener("click", function() {
+           var current = document.getElementsByClassName("active");
+           current[0].className = current[0].className.replace(" active", "");
+           this.className += " active";
+           });
+         }
+         </script>
+            <script>
+             // Add active class to the current button (highlight it)
+             var header = document.document.getElementById("sec");
+             var btns = header.getElementsByClassName("get");
+             for (var i = 0; i < btns.length; i++) {
+               btns[i].addEventListener("click", function() {
+               var current = document.getElementsByClassName("active2");
+               current[0].className = current[0].className.replace(" active2", "");
+               this.className += "active2";
+               });
+             }
+             </script>
+
+
+    <br>  
+
     <br>
    
     <div class="box">
         <div class="boxmain">
 <div class="content">
-    <p class="h1"style="color:white;font-size:44px;padding-top:150px;font-weight: bolder;">Get the best part of your day</p>
-    <p class="h2"style="color:red;font-size:44px;font-weight: bolder;">- you fit here.</p>
+    <p class="h1"style="">Get the best part of your day</p>
+    <p class="h2"style="">- you fit here.</p>
 <br>
-<p class="h3"style="color:white;font-size:24px;">We provide serious fitness but within a fun and friendly, safe space. </p>
+<p class="h3"style="">We provide serious fitness but within a fun and friendly, safe space. </p>
 <br>
 <br>
 <btton class="onea">Join Now</btton><btton class="act">FREE ROUTINE PLAN <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 </div>
         </div>
         <div class="boxmain2">
-            <img src="image.jpeg"style="width:550px;height:600px;padding-left:30px">
+            <img src="image.jpeg"style=""class="box2img">
           <!--  <ul class="listcon" >
                 <li><i class='fas fa-chevron-circle-right'></i> Accurate dumble weight</li>
                 <li> <i class='fas fa-chevron-circle-right'></i>Awesome gym Facilities</li>
@@ -478,39 +758,39 @@ display: block;
        <p class="btnjoin"> Join Now <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
   </div>
     <div class="bigtext">
-     <h1><img src="images/Vector.png" alt="">Training Programs.</h1>
+     <h1><img src="images/Vector.png" alt=""class="trainl">Training Programs.</h1>
+     
    </div>
    <br>
-   <br>
-    <div class="owl">
+   <br> <div class="owl">
         <div class="owl-carousel owl-theme">
             <div class="item">
                
-                <img src="images/image1.png" alt=""style="width: 300px;height:300px;">
+                <img src="images/image1.png" alt=""class="owlimg"style="">
              </div>
             <div class="item">
-                <img src="images/image2.png" alt=""style="width: 300px;height:350px;">
+                <img src="images/image2.png" alt=""class="owlimg2"style="">
              </div>
             <div class="item">
-                <img src="images/image3.png" alt=""style="width: 300px;height:300px;">
+                <img src="images/image3.png" alt=""class="owlimg"style="">
                    </div>
             <div class="item">
-                <img src="images/image15.jpg" alt=""style="width: 300px;height:350px;">
+                <img src="images/image15.jpg" alt=""class="owlimg2"style="">
             </div>
             <div class="item">
-                <img src="images/image9.jpg" alt=""style="width: 300px;height:300px;">
+                <img src="images/image9.jpg" alt=""class="owlimg"style="">
             </div>
             <div class="item">
-                <img src="images/image10.jpg" alt=""style="width: 300px;height:350px;">
+                <img src="images/image10.jpg" alt=""class="owlimg2"style="">
             </div>
             <div class="item">
-                <img src="images/image11.jpg" alt=""style="width: 300px;height:300px;">
+                <img src="images/image11.jpg" alt=""class="owlimg"style="">
           </div>
             <div class="item">
-                <img src="images/image13.jpg" alt=""style="width: 300px;height:350px;">
+                <img src="images/image13.jpg" alt=""class="owlimg2"style="">
            </div>
             <div class="item">
-                <img src="images/image14.jpg" alt=""style="width: 300px;height:300px;">
+                <img src="images/image14.jpg" alt=""class="owlimg"style="">
             </div>
  </div>
  <br>
@@ -552,7 +832,8 @@ display: block;
               <btton type="button"class="oneactp"style="background-color:white;color:black ;margin-top: 55px;border-color: black 3px;">JOIN US</btton>
                 </div>
             </div>
-           
+         <br>
+         
             <div class="container"style="background-color: transparent;padding-top:150px">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
@@ -591,8 +872,7 @@ display: block;
                           <img src="image.jpeg" class=""style="border-radius:6px;height:400px;width:320px;">
                           </div>
                         </div>
-                        
-                    </div>
+               </div>
                   
                     <div class="item">
                       <div class="column">
@@ -624,17 +904,51 @@ display: block;
                   </a>
                 </div>
               </div>
+              </div></div>
+          <br>
+          <br> 
+          <div class="contowl"><div class="owl2">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <p style="font-size: 44px;font-weight: 900;padding-top: 10px;width: 400px;height: 400px;">Testimonials</p>
+                 </div>
+                <div class="item">
+                    <img src="images/image2.png" alt=""class="owlimg"style="">
+                 </div>
+                <div class="item">
+                    <img src="images/image3.png" alt=""class="owlimg"style="">
+                       </div>
+                <div class="item">
+                  <p style="font-size: 44px;font-weight: 900;padding-top: 10px;">Testimonials</p>
+                </div>
+                <div class="item">
+                    <img src="images/image9.jpg" alt=""class="owlimg"style="">
+                </div>
+                <div class="item">
+                    <img src="images/image10.jpg" alt=""class="owlimg"style="">
+                </div>
+                <div class="item">
+                  <p style="font-size: 44px;font-weight: 900;padding-top: 10px;">Testimonials</p>
               </div>
-          
-              
-             <center><img src="logo.png"class="imglo"style="border-radius: 50%;width:700px;height:350px;padding-top:150px;"></center> 
+                <div class="item">
+                    <img src="images/image13.jpg" alt=""class="owlimg"style="">
+               </div>
+                <div class="item">
+                    <img src="images/image14.jpg" alt=""class="owlimg"style="">
+                </div>
+              </div> </div></div>
+     <br>
+     <br>
+     <br>
+
+             <center><img src="GYM LOGO 05.png"class="imglo"style="width:300px;height:300px;padding-top:200px;"></center> 
              <br>
              <br>
              <br>
              <br>
              <br>
              <br>
-             <footer>
+     <footer>
                 <div class="footer-content">
                     <img src="logo.png"class="imgfooter" >
                     <br>
@@ -666,7 +980,7 @@ display: block;
                 
                 </div>
         
-            </footer>
+            </footer> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
 integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
@@ -694,4 +1008,22 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  }
 })
  </script>
+ 
+ <script>
+  'use strict';
+
+// navbar variables
+const navbarNav = document.querySelector('.navbar-nav');
+const navbarToggleBtn = document.querySelector('.nav-toggle-btn');
+
+// navbar toggle functionality
+navbarToggleBtn.addEventListener('click', function () {
+
+  navbarNav.classList.toggle('active');
+  this.classList.toggle('active');
+
+});
+ </script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

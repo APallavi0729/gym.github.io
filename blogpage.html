@@ -28,6 +28,7 @@
    <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <link rel="stylesheet" href="index.css">
    <style>
 
 nav{
@@ -99,7 +100,7 @@ height: 80px;
     background-color: rgba(255, 26, 26, 0.866);
     cursor: pointer;
 }
-.get:hover{
+.active2,.get:hover{
     background-color: rgba(255, 26, 26, 0.866);
 }
 .second{
@@ -117,7 +118,7 @@ height: 80px;
     background-color: transparent;
     cursor: pointer;
 }
-.one:hover{
+.active,.one:hover{
     background-color: white;
     color: black;
 }
@@ -299,16 +300,14 @@ color: #878787;
   clear: both;
 }
 footer{
-
-   position: absolute;
-   padding-top: 100%;
-   margin-top: 50px;
-   background: #111;
-   height: auto;
-   width: 100vw;
-   padding-top: 40px;
-   color: #fff;
-   background-color: #000;
+    position: absolute;
+  padding-top: 100%;
+    background: #111;
+    height: auto;
+   width:100%;
+ padding-top: 40px;
+    color: #fff;
+    background-color: #000;
 }
 .footer-content{
     display: flex;
@@ -363,7 +362,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
 padding-bottom: 40px;
     text-align: center;
@@ -423,21 +422,81 @@ display: block;
 <body>
 
    <nav>
-      <div class="firstbox">
-         <img src="logo.png "class="logos"/>
-          <div class="home">
-          <a href="index.html"style="text-decoration:none;">   <btton type="button"class="oneact">Home</btton></a> 
-            <a href="about.html">  <btton type="button"class="one">About</btton></a>
-            <a href="workou.html"> <btton type="button"class="one">Workouts</btton></a>
-                <a href="pric.html"> <btton type="button"class="one">Pricing</btton></a>
-                    <a href="blog.html"> <btton type="button"class="one">Blogs</btton></a>
-          </div>
-           <div class="second">
-              <button class="get" href="">LogIn</a>
-              <button class="get1"href="">Sign Up</button>
-           </div>
-      </div>
-   </nav>
+    <div class="firstbox">
+      <img src="logo.png "class="logos"/>
+       <div class="home"id="first">
+         <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one">Home</btton></a> 
+         <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+         <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+             <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                 <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one active">Blogs</btton></a>
+       </div>
+        <div class="second"id="sec">
+           <button class="get" href="">LogIn</a>
+           <button class="get active2"href="">Sin Up</button>
+        </div>
+        <div class="thir">
+          <span class="thirednav"style="" onclick="openNav()">&#9776;</span>
+        </div>
+   </div>
+   <!--div class="mobile-navbar-btn">
+    <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+   </div
+ 
+   
+   <button class="nav-toggle-btn">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+  </button>-->
+  </nav>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html"style="text-decoration:none;">   <btton type="button"class="one active">Home</btton></a> 
+         <a href="about.html"style="text-decoration:none;">  <btton type="button"class="one">About</btton></a>
+         <a href="workou.html"style="text-decoration:none;"> <btton type="button"class="one">Workouts</btton></a>
+             <a href="pric.html"style="text-decoration:none;"> <btton type="button"class="one">Pricing</btton></a>
+                 <a href="blog.html"style="text-decoration:none;"> <btton type="button"class="one">Blogs</btton></a>
+    </div>
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+  
+
+   <script>
+       // Add active class to the current button (highlight it)
+       var header = document.document.getElementById("first");
+       var btns = header.getElementsByClassName("one");
+       for (var i = 0; i < btns.length; i++) {
+         btns[i].addEventListener("click", function() {
+         var current = document.getElementsByClassName("active");
+         current[0].className = current[0].className.replace(" active", "");
+         this.className += " active";
+         });
+       }
+       </script>
+          <script>
+           // Add active class to the current button (highlight it)
+           var header = document.document.getElementById("sec");
+           var btns = header.getElementsByClassName("get");
+           for (var i = 0; i < btns.length; i++) {
+             btns[i].addEventListener("click", function() {
+             var current = document.getElementsByClassName("active2");
+             current[0].className = current[0].className.replace(" active2", "");
+             this.className += " active";
+             });
+           }
+           </script>
+
    
    <div class="body-content">
       <h1 class="heading">Essential Yoga Flows<span class="red">.</span></h1>
